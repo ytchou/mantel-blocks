@@ -1,0 +1,23 @@
+[
+  {
+    "id": "nowplaying",
+    "name": "Now Playing",
+    "creator": "ytchou",
+    "license": "MIT",
+    "path": "blocks/nowplaying"
+  },
+  {
+    "id": "rename",
+    "name": "Screenshot Names",
+    "creator": "ytchou",
+    "license": "MIT",
+    "path": "blocks/rename"
+  },
+  {
+    "id": "shelf",
+    "name": "Shelf",
+    "creator": "ytchou",
+    "license": "MIT",
+    "path": "blocks/shelf"
+  }
+]

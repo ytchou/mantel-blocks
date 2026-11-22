@@ -1,0 +1,19 @@
+{
+  "id": "shelf",
+  "name": "Shelf",
+  "version": "1.0.0",
+  "contract": 2,
+  "executable": "Shelf",
+  "summary": "Holds files, links and text you drop on the notch, and new screenshots, until you drag them out again.",
+  "symbol": "tray.full",
+  "trigger": "Dragging something toward the notch, or taking a screenshot",
+  "permissions": [],
+  "access": ["files.read"],
+  "events": ["dragStarted", "dragEnded", "pointerHover", "screenshotCaptured"],
+  "settings": [
+    { "key": "showCount", "type": "toggle", "title": "Show the item count beside the notch", "default": false },
+    { "key": "showCountHelp", "type": "note", "title": "Off: the notch looks untouched while the shelf holds items; move the pointer onto it to open the shelf. On: a small count sits in the menu bar, left of the notch." },
+    { "key": "collectScreenshots", "type": "toggle", "title": "Add new screenshots to the shelf", "default": true },
+    { "key": "collectScreenshotsHelp", "type": "note", "title": "The screenshot stays in the folder macOS saves it to. The shelf holds it so you can drag it from the notch to where it belongs." }
+  ]
+}

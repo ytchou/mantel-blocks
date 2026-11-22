@@ -1,0 +1,17 @@
+{
+  "id": "nowplaying",
+  "name": "Now Playing",
+  "version": "1.0.0",
+  "contract": 1,
+  "executable": "NowPlaying",
+  "summary": "Shows what is playing, in Spotify, Music, YouTube and more, when the volume or the track changes.",
+  "symbol": "music.note",
+  "trigger": "Changing the volume, or a new track starting",
+  "permissions": [],
+  "events": ["nowPlaying", "outputVolume"],
+  "settings": [
+    { "key": "showOnVolumeChange", "type": "toggle", "title": "Show when the volume changes", "default": true },
+    { "key": "showOnTrackChange", "type": "toggle", "title": "Show when a new track starts", "default": true },
+    { "key": "about", "type": "note", "title": "Spotify and Music tell Mantel about each track themselves. Other players, such as YouTube in a browser, are read from what macOS shows as Now Playing. That part of macOS is not documented by Apple, so it may stop working after a macOS update; Spotify and Music would still work." }
+  ]
+}

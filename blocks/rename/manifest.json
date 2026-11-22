@@ -1,0 +1,35 @@
+{
+  "id": "rename",
+  "name": "Screenshot Names",
+  "version": "1.0.0",
+  "contract": 2,
+  "executable": "Rename",
+  "summary": "Gives each new screenshot a name that says what is in it.",
+  "symbol": "camera.viewfinder",
+  "trigger": "Taking a screenshot",
+  "permissions": ["Access to the screenshot folder", "Apple Intelligence (optional)"],
+  "access": ["files.screenshots"],
+  "events": ["screenshotCaptured"],
+  "settings": [
+    {
+      "key": "nameLength", "type": "choice", "title": "Name length", "default": "standard",
+      "options": [
+        { "value": "short", "title": "Short" },
+        { "value": "standard", "title": "Standard" },
+        { "value": "long", "title": "Long" }
+      ]
+    },
+    {
+      "key": "nameLanguage", "type": "choice", "title": "Language of names", "default": "matchContent",
+      "options": [
+        { "value": "matchContent", "title": "Match content" },
+        { "value": "english", "title": "English" },
+        { "value": "traditionalChinese", "title": "Traditional Chinese" }
+      ]
+    },
+    { "key": "datePrefix", "type": "toggle", "title": "Start names with the date", "default": false },
+    { "key": "appNameSuffix", "type": "toggle", "title": "End names with the app name", "default": false },
+    { "key": "speed", "type": "note", "title": "macOS saves a screenshot only after its floating thumbnail goes away, about 5 seconds after the capture. Naming cannot start before that. To name screenshots at once, press ⇧⌘5, open Options and turn off Show Floating Thumbnail." },
+    { "key": "modelStatus", "type": "note", "title": "The on-device model is not available, so screenshots get simple dated names." }
+  ]
+}
